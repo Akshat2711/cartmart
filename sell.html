@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>sell@srmolx</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="sell.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+   <link rel="stylesheet" href="navbar.css">
+   
+</head>
+
+
+
+
+
+<body class="bg-gray-100">
+
+  <nav class="navbar navbar-expand-custom navbar-mainbg">
+    <a class="navbar-brand navbar-logo" href="main.html">CARTmart</a>
+    <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars text-white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+            <li class="nav-item">
+                <a class="nav-link" href="main.html"><i class=""></i>Home</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="shop.html"><i class=""></i>Shop</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="sell.html"><i class=""></i>Sell</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="auction.html"><i class=""></i>Auction</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="chatmenu.html"><i class=""></i>Chat</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="myitem.html"><i class=""></i>Myitem</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html"><i class=""></i>About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="container">
+  <h2 class="title">sell@srmolx</h2>
+  <label for="image-upload" class="image-upload-label">
+      <img id="image-preview" src="https://www.ancodeai.com/placeholder.svg" alt="Clickable image preview">
+  </label>
+  <input id="image-upload" type="file" class="image-upload-input" onchange="previewImage()" accept="image/*">
+  <input type="text" class="input-field" placeholder="Enter product name" id="pro_name"/>
+  <input type="text" class="input-field" placeholder="Enter price" id="price" />
+  <textarea class="input-field" placeholder="Enter description" rows="4" id="description"></textarea>
+  <button class="button button-list" onclick="auctionupload()">List for Auction</button>
+  <button class="button button-sell" onclick="uploadImage()">Sell Item</button>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
+<script src="sell.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="navbar.js"></script>
+
+
+
+    
+
+   </body>
+
+
+
+
+
+
+
+
+
+</html>
