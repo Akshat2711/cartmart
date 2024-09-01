@@ -1,5 +1,3 @@
-# Collab_repo
-- hello i am akshat
-- hello i am punit
--hello i am meet
--hello babu
+this is website to sell and buy stuff 
+i created using js,html,css
+you can put stuff for auction
